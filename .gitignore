@@ -1,0 +1,17 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Local environment artifacts
+.venv/
+venv/
+
+# Ignore dataset files in data/ folder but keep source code
+/data/*
+!/data/*.py
+
+# Partial downloads
+*.crdownload
