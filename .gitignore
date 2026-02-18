@@ -9,9 +9,36 @@ __pycache__/
 .venv/
 venv/
 
-# Ignore dataset files in data/ folder but keep source code
+# Ignore dataset files in data/ folder but keep source code and selected folders
 /data/*
 !/data/*.py
+!/data/realSeismic/
+!/data/realSeismicOutputs/
+!/data/realSeismic/.gitkeep
+!/data/realSeismicOutputs/.gitkeep
+
+# Real seismic input/output payloads
+/data/realSeismic/*.sgy
+/data/realSeismic/*.segy
+/data/realSeismicOutputs/*.sgy
+/data/realSeismicOutputs/*.segy
+
+# Extracted synthetic datasets and model artifacts
+/datasets/
+/sessions/
+/checkpoints/
+
+# Large binary artifacts
+*.zip
+*.tar
+*.gz
+*.7z
+*.dat
+*.pth
+*.pt
 
 # Partial downloads
 *.crdownload
+
+# Windows ADS metadata artifacts
+*:Zone.Identifier
